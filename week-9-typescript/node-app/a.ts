@@ -1,10 +1,7 @@
-function isLegal(age: number) {
-  if( age > 18) {
-    return false;
-  }
-  else {
-    return false;
-  }
+function delayedCall(fn: () => void) {
+  setTimeout(fn, 1000);
 }
 
-let x = isLegal(18);
+delayedCall(() => {
+  console.log("hi there");
+})
