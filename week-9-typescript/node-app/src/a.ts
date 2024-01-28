@@ -1,9 +1,17 @@
-type NumberorString = string | Number;
+type Employee = {
+  name: string;
+  startDate: Date;
+};
 
-// function printId(id: (number | string)) {
-function printId(id: NumberorString) {
-  console.log(`ID: ${id}`)
-}
+interface Manager  {
+  name: string;
+  department: string;
+};
 
-printId(101);
-printId("343")
+type TeamLead = Employee & Manager;
+
+const teamLead: TeamLead = {
+  name: "harkirat",
+  startDate: new Date(),
+  department: "Software developer"
+};
