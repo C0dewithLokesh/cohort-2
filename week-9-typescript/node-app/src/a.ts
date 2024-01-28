@@ -1,21 +1,19 @@
-interface User {
-  firstName: string;
-  lastName: string;
+interface Person {
+  name: string;
   age: number;
-  email?: string;
+  greet(phrase: string): void;
 }
 
-function isLegal(user: User) {
-  if(user.age > 18) {
-    return true;
+class Employee implements Person {
+  name: string;
+  age: number;
+
+  constructor(n: string, a: number) {
+      this.name = n;
+      this.age = a;
   }
-  else {
-    return false;
+
+  greet(phrase: string) {
+      console.log(`${phrase} ${this.name}`);
   }
 }
-
-isLegal({
-  firstName: "Lokesh",
-  lastName: "Kaushik",
-  age: 20
-})
