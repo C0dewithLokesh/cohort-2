@@ -1,5 +1,11 @@
 "use strict";
-function greet(firstName) {
-    console.log(`Hello ${firstName}`);
+function isLegal(age) {
+    if (age > 18) {
+        return false;
+    }
+    else {
+        return false;
+    }
 }
-greet("Lokesh");
+let x = isLegal(18);
+console.log(x);

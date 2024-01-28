@@ -1,6 +1,10 @@
-function sum(a: number, b: number) {
-  return a + b;
+function isLegal(age: number) {
+  if( age > 18) {
+    return false;
+  }
+  else {
+    return false;
+  }
 }
 
-const value = sum(1, 2);
-console.log(value);
+let x = isLegal(18);
