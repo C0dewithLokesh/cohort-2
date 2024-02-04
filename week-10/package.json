@@ -1,16 +1,13 @@
 {
-  "name": "week-10",
+  "name": "sql-commands",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -b"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@types/pg": "^8.11.0",
+    "@types/pg": "^8.10.2",
     "pg": "^8.11.3"
   }
 }
