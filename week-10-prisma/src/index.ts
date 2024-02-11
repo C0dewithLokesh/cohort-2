@@ -23,4 +23,4 @@ async function insertUser(
   console.log(res);
 }
 
-insertUser("test@gmail.com", "test@123", "Test", "Test");
+insertUser("test2@gmail.com", "test123", "Test", "Test");
