@@ -24,4 +24,6 @@ app.post("/", async (req, res) => {
         message: "Done signing up!"
     })
 })
+
+
 app.listen(3000);
