@@ -6,7 +6,7 @@ app.use(express.json());
 
 const client = new PrismaClient();
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
     res.json({
         message: "Healthy server"
     })
@@ -24,5 +24,4 @@ app.post("/", async (req, res) => {
         message: "Done signing up!"
     })
 })
-
 app.listen(3000);
